@@ -2,6 +2,8 @@
 import { RouterLink } from 'vue-router/auto'
 
 const handleClick = (num: number) => {
+  console.log('')
+
   console.log(num)
 }
 </script>

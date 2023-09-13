@@ -10,6 +10,7 @@ declare module 'vue' {
     Demo: typeof import('./src/components/Demo.vue')['default']
     HelloWorld: typeof import('./src/components/HelloWorld.vue')['default']
     IMdiAccount: typeof import('~icons/mdi/account')['default']
+    ReloadPrompt: typeof import('./src/components/ReloadPrompt.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
   }
