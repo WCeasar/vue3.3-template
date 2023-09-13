@@ -16,3 +16,8 @@ const target = ref<HTMLDivElement>()
 </template>
 
 <style lang="scss" scoped></style>
+
+<route lang="yaml">
+meta:
+  layout: layout
+</route>
