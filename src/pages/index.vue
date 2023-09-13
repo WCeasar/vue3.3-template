@@ -10,6 +10,8 @@ const target = ref<HTMLDivElement>()
 
     <div class="bg-yellow-300 h-11 w-11" ref="target"></div>
   </div>
+
+  <i-mdi-account class="font-medium text-red-400" />
   <router-link to="/about">about</router-link>
 </template>
 
