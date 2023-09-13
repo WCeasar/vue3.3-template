@@ -11,6 +11,7 @@ import { VueRouterAutoImports } from 'unplugin-vue-router'
 import Icons from 'unplugin-icons/vite'
 import IconsResolver from 'unplugin-icons/resolver'
 import Layouts from 'vite-plugin-vue-layouts'
+import VueMacros from 'unplugin-vue-macros/vite'
 
 // https://vitejs.dev/config/
 export default defineConfig({
@@ -18,8 +19,13 @@ export default defineConfig({
     VueRouter({
       /* options */
     }),
-    vue(),
-    vueJsx(),
+    VueMacros({
+      plugins: {
+        vue: vue(),
+        vueJsx: vueJsx() // 如果需要
+      }
+    }),
+
     UnoCSS(),
     AutoImport({
       // targets to transform

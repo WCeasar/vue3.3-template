@@ -1,5 +1,9 @@
 <script setup lang="ts">
 import { RouterLink } from 'vue-router/auto'
+
+const handleClick = (num: number) => {
+  console.log(num)
+}
 </script>
 
 <template>
@@ -15,6 +19,8 @@ import { RouterLink } from 'vue-router/auto'
   <button class="i-ph:airplane-tilt-duotone text-9xl" />
   <!-- Twemoji of laugh, turns to tear on hovering -->
   <router-link to="/">index</router-link>
+
+  <Demo @custom-click="handleClick"></Demo>
 </template>
 
 <style lang="scss" scoped></style>
