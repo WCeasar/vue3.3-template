@@ -10,29 +10,25 @@ const updateSW = registerSW({
   onRegisteredSW(url, registration) {
     setInterval(() => {
       registration?.update()
-    })
+    }, 36000)
   }
 })
 
 onMounted(() => {
   updateSW()
 })
-const target = ref<HTMLDivElement>()
 </script>
 
 <template>
-  <div class="index-page">
-    <div class="bg-yellow-300 h-11 w-11" ref="target"></div>
+  <div>
+    index
+    <router-link to="/about">about</router-link>
   </div>
-
-  <i-mdi-account class="font-medium text-red-400" />
-
-  <router-link to="/about">about</router-link>
 </template>
 
 <style lang="scss" scoped></style>
 
 <route lang="yaml">
 meta:
-  layout: layout
+  layout: default
 </route>

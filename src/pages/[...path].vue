@@ -1,10 +1,12 @@
 <script setup lang="ts"></script>
 
 <template>
-  <div class="layout-page">
-    layout
-    <router-view></router-view>
-  </div>
+  <div class="404-page">Not Found</div>
 </template>
 
 <style lang="scss" scoped></style>
+
+<route lang="yaml">
+meta:
+  layout: 404
+</route>
